@@ -59,7 +59,7 @@ class WordDiff extends Diff<string, string> {
       right = right.toLowerCase();
     }
 
-    return left.trim() === right.trim();
+    return left === right;
   }
 
   tokenize(value: string, options: DiffWordsOptionsAbortable | DiffWordsOptionsNonabortable = {}) {
