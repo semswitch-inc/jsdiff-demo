@@ -26,7 +26,7 @@ describe('README Git rename example', function() {
    */
   const applyGitPatch = (function() {
     const readme = fs.readFileSync(
-      path.join(__dirname, '../../README.md'),
+      path.join(import.meta.dirname, '../../README.md'),
       'utf-8'
     );
 
